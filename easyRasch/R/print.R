@@ -1,6 +1,6 @@
-#' calculate what is called the likelihood of a proposed value of ??_j
+#' Print 
 #'
-#' return the likelihood from Equation
+#' print the name of test taker and EAP value of theta
 #' 
 #' @param raschObj
 #' @param theta 
@@ -10,13 +10,10 @@
 #' 
 #' @rdname print
 #' @export
-
-#' @export
 setMethod ("print","Rasch",
             function(x,...){
-              print(list(x@name))
-              
+              print(list(name=x@name,eap=EAP()))
               
               }
             )
-getClass ("Rasch")
+
