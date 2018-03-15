@@ -30,7 +30,7 @@ setClass(Class="Rasch",
 
 #' @export
 setMethod("initialize", "Rasch", 
-          function(.Object, ...){
+          function(.Object,...){
             value=callNextMethod()
             return(value)
           }
