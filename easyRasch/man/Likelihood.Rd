@@ -2,13 +2,15 @@
 % Please edit documentation in R/Likelihood.R
 \name{Likelihood}
 \alias{Likelihood}
-\title{calculate what is called the likelihood of a proposed value of ??_j}
+\title{calculate what is called the likelihood of a proposed value of theta}
 \usage{
 Likelihood(raschObj = new("Rasch", name = c("Lim"), a = c(sample(1:10, 100,
   replace = T)), y = c(sample(0:1, 100, replace = T))), theta = 1)
 }
 \arguments{
-\item{theta}{}
+\item{raschObj}{Rasche value}
+
+\item{theta}{given theta, student's ability}
 }
 \value{
 A single numeric value that is return the likelihood

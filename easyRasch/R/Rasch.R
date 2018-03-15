@@ -27,7 +27,6 @@ setClass(Class="Rasch",
            
          )
 )
-
 #' @export
 setMethod("initialize", "Rasch", 
           function(.Object,...){
@@ -35,9 +34,8 @@ setMethod("initialize", "Rasch",
             return(value)
           }
 ) 
-
-#' @export   #validity check
-setValidity("Rasch", function(object){
+#' @export  
+setValidity("Rasch", function(object){ #validity check
   test1<-(is.character(object@name))
   test2<-is.numeric(object@a)
   test3<-is.numeric(object@y)

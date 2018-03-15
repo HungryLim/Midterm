@@ -2,8 +2,7 @@
 #'
 #' print the name of test taker and EAP value of theta
 #' 
-#' @param raschObj
-#' @param theta 
+#' @param x
 #'
 #' @return print the name of test taker and EAP value of theta
 #' @author Lim
@@ -13,7 +12,6 @@
 setMethod ("print","Rasch",   #using signature to create print function for Rasch
             function(x,...){
               print(list(name=x@name,eap=EAP()))
-              
               }
             )
 

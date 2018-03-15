@@ -7,13 +7,13 @@
 Prior(theta = 1)
 }
 \arguments{
-\item{theta}{A proposed value of ??_j}
+\item{theta}{A proposed value of theta}
 }
 \value{
 A single numeric value that is return the height of the specified normal curve evaluated at ??_j
 }
 \description{
-return the height of the specified normal curve evaluated at ??_j
+return the height of the specified normal curve evaluated at theta
 }
 \author{
 Lim

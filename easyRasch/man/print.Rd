@@ -5,10 +5,10 @@
 \alias{print,Rasch-method}
 \title{Print}
 \usage{
-\S4method{print}{Rasch}(x, ...)
+\S4method{print}{Rasch}(x, y, startandend, Rule, ...)
 }
 \arguments{
-\item{theta}{}
+\item{x}{}
 }
 \value{
 print the name of test taker and EAP value of theta

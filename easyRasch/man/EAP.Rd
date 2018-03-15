@@ -2,7 +2,7 @@
 % Please edit documentation in R/EAP.R
 \name{EAP}
 \alias{EAP}
-\title{Calculate the expected a posteriori value for ??j}
+\title{Calculate the expected a posteriori value for theta}
 \usage{
 EAP(raschObj = new("Rasch", name = c("Lim"), a = c(sample(1:10, 100, replace =
   T)), y = c(sample(0:1, 100, replace = T))), lower = -6, upper = 6,

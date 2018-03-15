@@ -2,8 +2,8 @@
 #'
 #' return the likelihood from Equation
 #' 
-#' @param raschObj
-#' @param theta 
+#' @param raschObj Rasche value
+#' @param theta given theta, student's ability
 #'
 #' @return A single numeric value that is return the likelihood
 #' @author Lim
