@@ -11,18 +11,15 @@ current.code<-as.package("easyRasch")
 load_all(current.code)
 document(current.code)
 
-########################################################
-#basic function #after run package.skeleton, delete this part including package.skeleton()
-poisson.lik<-function(lambda,y){
-  n<-length(y)
-  logl<-sum(y)*log(lambda)-n*lambda
-  return(-logl)
-}
-package.skeleton()
-################################delete above here after run skeleton
+
 
 #an example
-y<-c(3,3,3,3,2)
-lambda<-3
-poisson.lik(y=y,lambda = lambda)
-new("Poisson")
+data<-new("Rasch", name=c("Lim"),a=c(sample(1:10,100,replace = T)), 
+          y=c(sample(0:1,100,replace = T)))
+theta=1
+
+Probability(data,theta)
+Likelihood(data,theta)
+Prior(theta)
+EAP(raschObj=data,lower=-6,upper=6)
+print(data)
