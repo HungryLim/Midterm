@@ -36,7 +36,7 @@ setMethod("initialize", "Rasch",
           }
 ) 
 
-#' @export
+#' @export   #validity check
 setValidity("Rasch", function(object){
   test1<-(is.character(object@name))
   test2<-is.numeric(object@a)

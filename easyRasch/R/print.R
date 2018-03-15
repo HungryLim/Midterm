@@ -10,7 +10,7 @@
 #' 
 #' @rdname print
 #' @export
-setMethod ("print","Rasch",
+setMethod ("print","Rasch",   #using signature to create print function for Rasch
             function(x,...){
               print(list(name=x@name,eap=EAP()))
               

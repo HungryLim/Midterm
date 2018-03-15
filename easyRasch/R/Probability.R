@@ -13,7 +13,7 @@
 #' @rdname Probability
 #' @export
 setGeneric(name = "Probability",
-           def = function(raschObj=new("Rasch", name=c("Lim"),a=c(sample(1:10,100,replace = T)), 
+           def = function(raschObj=new("Rasch", name=c("Lim"),a=c(sample(1:10,100,replace = T)),#I set default in here
                                        y=c(sample(0:1,100,replace = T))), theta=1) {
              standardGeneric("Probability")
            })
@@ -27,7 +27,7 @@ setMethod(f="Probability",
             p<-matrix(NA,nrow=length(y))
             q<-matrix(NA,nrow=length(y))
             pq<-matrix(NA,nrow=length(y))
-            for (i in 1:length(y)){
+            for (i in 1:length(y)){                #loops to get p,q and pq
               p[i]<-exp(theta-a[i])/(1+exp(theta-a[i]))
               q[i]<-1-p[i] 
             }
